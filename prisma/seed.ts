@@ -118,8 +118,10 @@ async function seedDatabase() {
             barbershop: {
               connect: {
                 id: barbershop.id,
+
               },
             },
+            imageUrl: service.imageUrl,
           },
         });
       }
