@@ -44,11 +44,15 @@ export default async function Home() {
      </div>
 
      <div className="mt-6">
-       <h2 className='text-xs pl-5 uppercase mb-3 text-gray-400 font-bold'>Agendamentos</h2>
+      {confirmedBookings.length > 0 && (
+        <>
+           <h2 className='text-xs pl-5 uppercase mb-3 text-gray-400 font-bold'>Agendamentos</h2>
 
-       <div className='flex px-5 gap-3 overflow-x-auto [&::-webkit-scrollbar]:hidden'>
-        {confirmedBookings.map(booking =>  <BookingItem key={booking.id} booking={booking} /> )}
-       </div>
+          <div className='flex px-5 gap-3 overflow-x-auto [&::-webkit-scrollbar]:hidden'>
+          {confirmedBookings.map(booking =>  <BookingItem key={booking.id} booking={booking} /> )}
+          </div>
+        </>
+      )}
      </div>
 
      <div className='mt-6'>
