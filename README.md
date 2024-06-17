@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# FSW Barber
 
-## Getting Started
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+![Opera Instantâneo_2024-06-17_151714_localhost](https://github.com/Victor-als/Barber-shop/assets/66024677/9ed5f24e-1426-4227-8918-c2ab337e3677)
+![Opera Instantâneo_2024-06-17_153423_localhost](https://github.com/Victor-als/Barber-shop/assets/66024677/b2a0565f-4163-48c7-ab9d-79b89c8c1c50)
+![Opera Instantâneo_2024-06-17_151808_localhost](https://github.com/Victor-als/Barber-shop/assets/66024677/07e1f0f4-d4c8-4676-ba79-be7c62486ba3)
+![Opera Instantâneo_2024-06-17_151837_localhost](https://github.com/Victor-als/Barber-shop/assets/66024677/3366a80a-e0b3-4bf0-b216-595f4f5a172d)
+![Opera Instantâneo_2024-06-17_151948_localhost](https://github.com/Victor-als/Barber-shop/assets/66024677/5f9586b3-2e10-452f-b7b2-49fb56f3ed12)
+
+Projeto Mobile first e por enquanto só tem a versão mobile, versão desktop ainda está em desenvolvimento.
+
+## Tenologias usadas no projeto
+
+- React.js
+- Tailwind
+- Next.js
+
+
+## Acesse o aplicativo publicado pelo link: 
+```sh
+https://barber-shop-opal.vercel.app
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Para rodar o projeto localmente
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone o repositório:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```sh
+$ git clone https://github.com/Victor-als/Barber-shop
+```
 
-## Learn More
+3. Instale as dependências:
 
-To learn more about Next.js, take a look at the following resources:
+```sh
+npm install
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Run locally:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```sh
+npm run dev
+```
