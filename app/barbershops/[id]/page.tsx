@@ -32,10 +32,11 @@ const BarbershopDetailsPage  = async ({ params }: BarbershopDetailsPageProps) =>
   }
 
   return ( 
-    <div>
+    <div className="2xl:px-24">
       <BarberShopInfo barbershop={barbershop}/>
 
-      <div className="px-5 flex flex-col gap-4 py-6 ">
+      <h2 className="px-5 pt-6 text-sm text-gray-400 font-bold">Serviços</h2>
+      <div className=" 2xl:w-[860px] 2xl:grid 2xl:grid-cols-2 px-5 flex flex-col gap-4 py-6">
         {barbershop.services.map(service => (
             <ServiceItem key={service.id} barbershop={barbershop} service={service} isAuthenticated={!!session?.user}/>
           ))}
