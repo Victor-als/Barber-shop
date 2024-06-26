@@ -24,7 +24,7 @@ const Header = () => {
                 width={120}
               />
             </Link>
-            <Sheet>
+            <Sheet >
                 <SheetTrigger asChild>
                     <Button 
                       className="h-8 w-8" 

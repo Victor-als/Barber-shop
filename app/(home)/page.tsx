@@ -79,35 +79,46 @@ export default async function Home() {
 
 
 
-           <div className='mt-6 2xl:max-w-[850px]'>
+           <div className='mt-6 px-2 2xl:px-0 2xl:max-w-[850px]'>
             <h2 className='text-xs px-5 uppercase mb-3 text-gray-400 font-bold'>Recomendados</h2>
 
-              <div className='flex px-5 2xl:gap-28 gap-4 overflow-x-auto [&::-webkit-scrollbar]:hidden'>
+
+            <Carousel>
+              <CarouselContent className='flex 2xl:px-0 px-5 2xl:gap-28 gap-4 overflow-x-auto 2xl:overflow-x-visible
+               [&::-webkit-scrollbar]:hidden'
+              >
                 {barbershops.map((barbershop) => (
-                  <div  key={barbershop.id} className='min-w-[167px] max-w-[167px]'>
+                  <CarouselItem  key={barbershop.id} className='min-w-[167px] max-w-[167px]'>
                     <BarbershopItem barbershop={barbershop}/>
-                  </div>
+                  </CarouselItem>
                 ))}
-              </div>
-         
+              </CarouselContent>
+              <CarouselPrevious className='invisible 2xl:visible'/>
+              <CarouselNext className='invisible 2xl:visible'/>
+            </Carousel>
           </div>
       </div>
      </div>
 
 
 
-    <div className='mx-24'>
+    <div className='2xl:mx-24 px-2 2xl:px-0 '>
       <div className='2xl:mt-8 mt-6 mb-[4.5rem] 2xl:max-w-[1650px]'>
         <h2 className='text-xs px-5 uppercase mb-3 text-gray-400 font-bold'>Populares</h2>
 
-      
-          <div className='flex 2xl:gap-28 px-5 gap-4 overflow-x-auto [&::-webkit-scrollbar]:hidden'>
+         <Carousel>
+          <CarouselContent className='flex 2xl:gap-28 2xl:px-0 px-5 gap-4 overflow-x-auto 2xl:overflow-x-visible
+            [&::-webkit-scrollbar]:hidden'
+          >
             {recommendedBarbershops.map((barbershop) => (
-              <div  key={barbershop.id} className='min-w-[167px] max-w-[167px]'>
+              <CarouselItem  key={barbershop.id} className='min-w-[167px] max-w-[167px]'>
                 <BarbershopItem barbershop={barbershop}/>
-            </div>
+              </CarouselItem>
             ))}
-          </div>
+          </CarouselContent>
+          <CarouselPrevious className='invisible 2xl:visible'/>
+          <CarouselNext className='invisible 2xl:visible'/>
+         </Carousel>
         
       </div>
     </div>
