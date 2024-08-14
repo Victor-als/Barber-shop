@@ -16,11 +16,11 @@ const SideMenu = () => {
   const handleLoginClick =  () => signIn("google");
   return ( 
     <>
-        <SheetHeader className="text-left border-b border-solid border-secondary p-5">
-                    <SheetTitle>
-                      Menu
-                    </SheetTitle>
-                </SheetHeader>
+        <SheetHeader className=" text-left border-b border-solid border-secondary p-5">
+            <SheetTitle>
+                Menu
+            </SheetTitle>       
+         </SheetHeader>
 
                 {data?.user ? (
                   <div className="flex justify-between px-5 py-6 items-center">

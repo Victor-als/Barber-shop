@@ -11,7 +11,6 @@ import Link from "next/link";
 
 const Header = () => {
   
-
   return ( 
     <header>
        <Card>
@@ -24,8 +23,8 @@ const Header = () => {
                 width={120}
               />
             </Link>
-            <Sheet >
-                <SheetTrigger asChild>
+            <Sheet>
+                <SheetTrigger className="xl:hidden" asChild>
                     <Button 
                       className="h-8 w-8" 
                       variant="outline" 
@@ -36,9 +35,10 @@ const Header = () => {
                 </SheetTrigger>
 
                 <SheetContent className="p-0">
-                  <SideMenu />
+                  <SideMenu/>
                 </SheetContent>
             </Sheet>
+
           </CardContent>
       </Card>
     </header>
