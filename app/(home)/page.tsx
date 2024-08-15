@@ -70,7 +70,9 @@ export default async function Home() {
                 <h2 className='text-xs pl-5 uppercase mb-3 text-gray-400 font-bold'>Agendamentos</h2>
 
                 <div className='flex px-5 gap-3 overflow-x-auto [&::-webkit-scrollbar]:hidden'>
-                {confirmedBookings.map(booking =>  <BookingItem key={booking.id} booking={booking} /> )}
+                {confirmedBookings.map(booking =>  <BookingItem key={booking.id} booking={booking} onClick={function (): void {
+                  throw new Error('Function not implemented.');
+                } } /> )}
                 </div>
               </>
             )}
