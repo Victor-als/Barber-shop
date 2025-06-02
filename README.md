@@ -36,7 +36,7 @@ npm run dev
 
 # Imagens da tela.
 
-
+![Image](https://github.com/user-attachments/assets/708d5894-f06a-420d-8796-a30ce7765acc)
 ![Opera Instantâneo_2024-06-17_151714_localhost](https://github.com/Victor-als/Barber-shop/assets/66024677/9ed5f24e-1426-4227-8918-c2ab337e3677) 
 ![Opera Instantâneo_2024-06-17_153423_localhost](https://github.com/Victor-als/Barber-shop/assets/66024677/b2a0565f-4163-48c7-ab9d-79b89c8c1c50) 
 ![Opera Instantâneo_2024-06-17_151808_localhost](https://github.com/Victor-als/Barber-shop/assets/66024677/07e1f0f4-d4c8-4676-ba79-be7c62486ba3) 
